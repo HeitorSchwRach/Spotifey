@@ -5,11 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    #lista-musicas{
-        display: flex;
-        padding: 10vh;
-        gap: 15vh;
-    }
+        /* Definindo o fundo da página e a cor do texto */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo do título e instruções */
+        b {
+            display: block;
+            margin: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Estilo do formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        input, button {
+            background-color: rgb(27, 27, 27);
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        input::placeholder, button:hover {
+            color: #ccc;
+        }
+
+        button {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(50, 50, 50);
+        }
+
+        /* Estilo da lista de músicas */
+        #lista-musicas {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        /* Estilo das músicas na lista */
+        .musica {
+            background-color: rgb(27, 27, 27);
+            padding: 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        
+        /* Estilo da lista de links de músicas */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +101,5 @@
     </form>
     <script src="script2.js"></script>
     <div id="lista-musicas"></div>
-
 </body>
 </html>
